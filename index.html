@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen Energia Solar | Zere sua Conta de Luz</title>
+    <!-- Google Fonts: Inter para um visual limpo, moderno e focado em conversão -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. Cabeçalho (Header) -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Placeholder: [LOGO] -->
+                <h2><i class="fas fa-solar-panel"></i> Lumen <span>Solar</span></h2>
+            </div>
+            <div class="header-contact">
+                <div class="phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(11) 4000-0000</span>
+                </div>
+                <a href="#hero-form" class="cta-button outline">Pedir Orçamento Grátis</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Dobra Principal (Hero Section) -->
+    <section class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <!-- Coluna 1: Textos -->
+            <div class="hero-content">
+                <h1>Zere sua conta de luz e valorize seu imóvel com a Lumen Energia Solar</h1>
+                <p class="subheadline">Instalação rápida, suporte total e as melhores placas do mercado. Faça o cálculo de economia sem compromisso.</p>
+                
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-piggy-bank"></i>
+                        <span>Economia de até 95%</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Garantia de 25 anos</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-handshake"></i>
+                        <span>Financiamento Fácil</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Formulário (CRUCIAL) -->
+            <div class="hero-form-wrapper" id="hero-form">
+                <div class="form-box">
+                    <h3>Receba seu Estudo de Economia Grátis</h3>
+                    <form action="#" method="POST" class="lead-form">
+                        <div class="input-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="whatsapp">WhatsApp (com DDD)</label>
+                            <input type="tel" id="whatsapp" placeholder="(00) 00000-0000" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">E-mail (opcional)</label>
+                            <input type="email" id="email" placeholder="seu@email.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="conta">Valor Médio da Conta de Luz</label>
+                            <select id="conta" required>
+                                <option value="" disabled selected>Selecione uma faixa...</option>
+                                <option value="ate-300">Até R$ 300</option>
+                                <option value="301-500">R$ 301 a R$ 500</option>
+                                <option value="501-1000">R$ 501 a R$ 1.000</option>
+                                <option value="mais-1000">Acima de R$ 1.000</option>
+                            </select>
+                        </div>
+                        <div class="input-group radio-group">
+                            <label class="radio-label"><input type="radio" name="tipo" value="residencial" checked> Residencial</label>
+                            <label class="radio-label"><input type="radio" name="tipo" value="comercial"> Comercial</label>
+                        </div>
+                        <button type="submit" class="cta-button primary-btn full-width">Quero Economizar Agora (Simular)</button>
+                        <p class="form-disclaimer"><i class="fas fa-lock"></i> Seus dados estão seguros conosco.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Seção de Dor/Problema vs. Solução -->
+    <section class="problem-solution">
+        <div class="container text-center">
+            <h2 class="section-title">Cansado dos aumentos constantes na conta de energia?</h2>
+            <p class="section-subtitle">O preço da energia elétrica não para de subir. Mas você tem o poder de mudar isso e transformar uma despesa eterna em um investimento inteligente.</p>
+            
+            <div class="solution-points">
+                <div class="point">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Chega de surpresas desagradáveis no fim do mês.</span>
+                </div>
+                <div class="point">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Invista em um ativo que se paga sozinho.</span>
+                </div>
+                <div class="point">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Valorize sua casa ou empresa em até 30%.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Como Funciona (Processo) -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title text-center">O Caminho Fácil para sua Energia Solar</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-file-invoice-dollar icon"></i>
+                    <h3>Orçamento/Estudo</h3>
+                    <p>Você solicita seu estudo grátis e nós calculamos o tamanho ideal do seu sistema.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-map-marked-alt icon"></i>
+                    <h3>Visita Técnica</h3>
+                    <p>Nossos engenheiros avaliam o seu telhado e a viabilidade estrutural sem compromisso.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-tools icon"></i>
+                    <h3>Instalação</h3>
+                    <p>Nossa equipe própria instala as placas rapidamente, com o mínimo de interferência na sua rotina.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <i class="fas fa-plug icon"></i>
+                    <h3>Homologação e Ativação</h3>
+                    <p>Cuidamos de toda a burocracia com a concessionária. Pronto, você já está economizando!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Diferenciais Técnicos e Confiança -->
+    <section class="differentiators">
+        <div class="container">
+            <h2 class="section-title text-center">Por que a Lumen Solar é sua melhor escolha?</h2>
+            <div class="diff-grid">
+                <div class="diff-item">
+                    <i class="fas fa-solar-panel"></i>
+                    <h4>Placas Certificadas</h4>
+                    <p>Trabalhamos apenas com equipamentos Tier 1 de alto rendimento.</p>
+                </div>
+                <div class="diff-item">
+                    <i class="fas fa-hard-hat"></i>
+                    <h4>Engenheiros Próprios</h4>
+                    <p>Sem terceirização. Equipe técnica altamente qualificada garantindo segurança.</p>
+                </div>
+                <div class="diff-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Monitoramento Remoto</h4>
+                    <p>Acompanhe a sua produção de energia em tempo real pelo aplicativo no celular.</p>
+                </div>
+                <div class="diff-item">
+                    <i class="fas fa-award"></i>
+                    <h4>Garantia e Manutenção</h4>
+                    <p>Garantia de eficiência de até 25 anos e suporte técnico rápido quando precisar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Prova Social (Testemunhos B2B/B2C) -->
+    <section class="social-proof">
+        <div class="container">
+            <h2 class="section-title text-center">Empresas e Famílias que já estão economizando</h2>
+            <div class="testimonials-grid">
+                <!-- Testemunho Residencial -->
+                <div class="testimo-card">
+                    <div class="testimo-img" style="background-image: url('https://images.unsplash.com/photo-1542037104845-a4613bb04cbb?auto=format&fit=crop&q=80');"></div>
+                    <div class="testimo-content">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Nossa conta de luz era o terror da casa, batia R$ 600 todo mês. Depois da Lumen, caiu para a taxa mínima de R$ 50. O investimento já está se pagando!"</p>
+                        <h4>Família Oliveira - Instalação Residencial</h4>
+                    </div>
+                </div>
+                <!-- Testemunho Comercial -->
+                <div class="testimo-card">
+                    <div class="testimo-img" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80');"></div>
+                    <div class="testimo-content">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Como padaria, nossos freezers e fornos consumiam muita energia. Com o projeto da Lumen, aumentamos nosso lucro líquido porque a despesa com energia praticamente zerou."</p>
+                        <h4>Padaria Pão de Ouro - Comercial</h4>
+                    </div>
+                </div>
+                <!-- Foto de Instalação -->
+                <div class="testimo-card photo-card">
+                    <div class="real-photo" style="background-image: url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80');"></div>
+                    <div class="photo-caption">
+                        <p><i class="fas fa-camera"></i> Projeto recente entregue com sucesso e homologado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Dobra de Fechamento (Final CTA) -->
+    <section class="final-cta">
+        <div class="container text-center">
+            <h2>O sol nasce todo dia. Pare de desperdiçar dinheiro.</h2>
+            <p class="subheadline">Solicite seu estudo de viabilidade grátis agora mesmo. Atendemos toda a região metropolitana e interior.</p>
+            <a href="#hero-form" class="cta-button primary-btn large">
+                <i class="fas fa-bolt"></i> Pedir Orçamento sem Compromisso
+            </a>
+        </div>
+    </section>
+
+    <!-- 8. Rodapé (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2><i class="fas fa-solar-panel"></i> Lumen <span>Solar</span></h2>
+                    <p>Energia limpa, economia real.</p>
+                    <p class="cnpj">CNPJ: 00.000.000/0001-00</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato e Endereço</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua das Inovações, 100 - Centro Empresarial</p>
+                    <p><i class="fas fa-envelope"></i> contato@lumensolar.com.br</p>
+                </div>
+                <div class="footer-trust">
+                    <h4>Certificações</h4>
+                    <div class="trust-icons">
+                        <span class="trust-badge"><i class="fas fa-id-card"></i> Empresa Registrada no CREA</span>
+                        <span class="trust-badge"><i class="fas fa-certificate"></i> Parceiros Certificados</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>Landing Page de alta conversão desenvolvida por <strong>OrbiTech</strong>.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
