@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumen Solar: soluções em energia solar para residências e empresas. Solicite um estudo gratuito de economia." />
+  <meta name="theme-color" content="#081f35" />
+
+  <title>Lumen Solar | Energia que gera economia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="topo">
+    <div class="container header-container">
+      <a class="logo" href="#topo" aria-label="Lumen Solar - início">
+        <span class="logo-icon"><i class="fa-solid fa-solar-panel"></i></span>
+        <span class="logo-text">Lumen <strong>Solar</strong></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#depoimentos">Resultados</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="phone" href="tel:+551140000000">
+          <i class="fa-solid fa-phone"></i>
+          <span>(11) 4000-0000</span>
+        </a>
+        <a href="#hero-form" class="btn btn-outline header-cta">Pedir orçamento</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#beneficios">Benefícios</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#depoimentos">Resultados</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#hero-form" class="btn btn-primary">Pedir orçamento grátis</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy" data-aos="fade-right" data-aos-duration="800">
+          <span class="eyebrow"><i class="fa-solid fa-bolt"></i> Energia limpa. Economia inteligente.</span>
+          <h1>Transforme sua conta de luz em <span>economia todos os meses.</span></h1>
+          <p class="hero-subtitle">Projeto completo de energia solar para residências e empresas, com suporte técnico do estudo à homologação.</p>
+
+          <div class="hero-highlights">
+            <div class="highlight">
+              <span class="highlight-icon"><i class="fa-solid fa-piggy-bank"></i></span>
+              <div>
+                <strong>Economia relevante</strong>
+                <small>Reduza significativamente seus gastos com energia.</small>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></span>
+              <div>
+                <strong>Equipamentos de qualidade</strong>
+                <small>Soluções dimensionadas para segurança e desempenho.</small>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon"><i class="fa-solid fa-headset"></i></span>
+              <div>
+                <strong>Suporte completo</strong>
+                <small>Acompanhamento técnico em todas as etapas.</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-trust-row">
+            <div class="trust-mini"><i class="fa-solid fa-circle-check"></i> Estudo gratuito</div>
+            <div class="trust-mini"><i class="fa-solid fa-circle-check"></i> Sem compromisso</div>
+            <div class="trust-mini"><i class="fa-solid fa-circle-check"></i> Atendimento consultivo</div>
+          </div>
+        </div>
+
+        <aside class="lead-card" id="hero-form" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+          <div class="lead-card-top">
+            <span class="lead-badge">Simulação gratuita</span>
+            <h2>Descubra quanto você pode economizar</h2>
+            <p>Preencha os dados abaixo e receba uma estimativa inicial.</p>
+          </div>
+
+          <form class="lead-form" id="leadForm" novalidate>
+            <div class="field">
+              <label for="nome">Nome completo</label>
+              <div class="input-wrap">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="name" required />
+              </div>
+              <small class="field-error"></small>
+            </div>
+
+            <div class="field">
+              <label for="whatsapp">WhatsApp</label>
+              <div class="input-wrap">
+                <i class="fa-brands fa-whatsapp"></i>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" inputmode="numeric" autocomplete="tel" required />
+              </div>
+              <small class="field-error"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail <span>(opcional)</span></label>
+              <div class="input-wrap">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" />
+              </div>
+              <small class="field-error"></small>
+            </div>
+
+            <div class="field">
+              <label for="conta">Valor médio da conta de luz</label>
+              <div class="input-wrap select-wrap">
+                <i class="fa-solid fa-receipt"></i>
+                <select id="conta" name="conta" required>
+                  <option value="" selected disabled>Selecione uma faixa</option>
+                  <option value="250" data-label="Até R$ 300">Até R$ 300</option>
+                  <option value="400" data-label="R$ 301 a R$ 500">R$ 301 a R$ 500</option>
+                  <option value="750" data-label="R$ 501 a R$ 1.000">R$ 501 a R$ 1.000</option>
+                  <option value="1300" data-label="Acima de R$ 1.000">Acima de R$ 1.000</option>
+                </select>
+              </div>
+              <small class="field-error"></small>
+            </div>
+
+            <fieldset class="property-type">
+              <legend>Tipo de imóvel</legend>
+              <label class="type-option active">
+                <input type="radio" name="tipo" value="Residencial" checked />
+                <i class="fa-solid fa-house"></i>
+                <span>Residencial</span>
+              </label>
+              <label class="type-option">
+                <input type="radio" name="tipo" value="Comercial" />
+                <i class="fa-solid fa-building"></i>
+                <span>Comercial</span>
+              </label>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary btn-full btn-lg">
+              <span>Calcular minha economia</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p class="form-note"><i class="fa-solid fa-lock"></i> Seus dados são usados apenas para contato e simulação.</p>
+          </form>
+
+          <div class="estimate-box" id="estimateBox" hidden>
+            <div>
+              <span>Estimativa ilustrativa</span>
+              <strong id="estimateValue">R$ 0/mês</strong>
+            </div>
+            <p id="estimateText"></p>
+            <a class="btn btn-success btn-full" id="whatsappCta" href="#" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Falar com um especialista
+            </a>
+            <button class="link-button" id="newSimulation" type="button">Fazer nova simulação</button>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-bottom-strip">
+        <div class="container strip-grid">
+          <div><strong>01</strong><span>Análise do consumo</span></div>
+          <div><strong>02</strong><span>Projeto personalizado</span></div>
+          <div><strong>03</strong><span>Instalação especializada</span></div>
+          <div><strong>04</strong><span>Homologação e ativação</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section" aria-label="Indicadores">
+      <div class="container stats-grid">
+        <div class="stat-card" data-aos="fade-up">
+          <span class="stat-icon"><i class="fa-solid fa-sun"></i></span>
+          <div><strong>25 anos</strong><span>de vida útil esperada dos módulos de qualidade*</span></div>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="stat-icon"><i class="fa-solid fa-mobile-screen"></i></span>
+          <div><strong>Monitoramento</strong><span>acompanhe a geração do sistema pelo celular</span></div>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="stat-icon"><i class="fa-solid fa-file-signature"></i></span>
+          <div><strong>Ponta a ponta</strong><span>do estudo inicial até a documentação final</span></div>
+        </div>
+      </div>
+      <p class="stats-note container">*A garantia e a vida útil variam conforme fabricante, modelo e condições de instalação.</p>
+    </section>
+
+    <section class="benefits section" id="beneficios">
+      <div class="container">
+        <div class="section-heading center" data-aos="fade-up">
+          <span class="section-kicker">POR QUE ENERGIA SOLAR?</span>
+          <h2>Mais previsibilidade, autonomia e valor para o seu imóvel</h2>
+          <p>Uma solução pensada para quem quer reduzir despesas recorrentes e investir em uma fonte de energia mais eficiente.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card" data-aos="fade-up">
+            <span class="card-icon"><i class="fa-solid fa-chart-line"></i></span>
+            <h3>Menos impacto dos reajustes</h3>
+            <p>Produzir parte da própria energia ajuda a reduzir a exposição aos aumentos tarifários ao longo do tempo.</p>
+          </article>
+          <article class="benefit-card featured" data-aos="fade-up" data-aos-delay="100">
+            <span class="mini-label">MAIS PROCURADO</span>
+            <span class="card-icon"><i class="fa-solid fa-coins"></i></span>
+            <h3>Economia recorrente</h3>
+            <p>O sistema é dimensionado com base no seu perfil de consumo para buscar uma relação eficiente entre investimento e retorno.</p>
+          </article>
+          <article class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="card-icon"><i class="fa-solid fa-house-circle-check"></i></span>
+            <h3>Valorização do imóvel</h3>
+            <p>Infraestrutura energética moderna pode tornar residências e empresas mais atrativas e eficientes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="como-funciona">
+      <div class="container process-layout">
+        <div class="process-copy" data-aos="fade-right">
+          <span class="section-kicker">PROCESSO SIMPLES</span>
+          <h2>Da sua conta de luz ao sistema funcionando</h2>
+          <p>Cuidamos das etapas técnicas e burocráticas para você ter uma experiência simples e transparente.</p>
+          <a href="#hero-form" class="btn btn-dark">Quero receber meu estudo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-left">
+            <span class="timeline-number">01</span>
+            <div><h3>Análise inicial</h3><p>Avaliamos o consumo médio e as características básicas do imóvel.</p></div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="80">
+            <span class="timeline-number">02</span>
+            <div><h3>Projeto e proposta</h3><p>Dimensionamos a solução e apresentamos equipamentos, estimativas e condições.</p></div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="160">
+            <span class="timeline-number">03</span>
+            <div><h3>Instalação</h3><p>A equipe realiza a montagem seguindo os requisitos técnicos e de segurança.</p></div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="240">
+            <span class="timeline-number">04</span>
+            <div><h3>Homologação e monitoramento</h3><p>Finalizamos o processo junto à concessionária e orientamos sobre o acompanhamento da geração.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase section" id="depoimentos">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="section-kicker">CONFIANÇA NA PRÁTICA</span>
+          <h2>Uma apresentação mais clara do que o cliente recebe</h2>
+          <p>Projeto, instalação e acompanhamento reunidos em uma experiência única.</p>
+        </div>
+
+        <div class="showcase-grid">
+          <div class="showcase-image" data-aos="zoom-in">
+            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=85" alt="Painéis solares instalados em um telhado" loading="lazy" />
+            <div class="showcase-floating-card">
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>Projeto completo</strong><span>Dimensionamento, instalação e homologação</span></div>
+            </div>
+          </div>
+
+          <div class="testimonial-stack">
+            <article class="testimonial-card" data-aos="fade-left">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p>“O que mais valorizamos foi a clareza em cada etapa do projeto e o acompanhamento depois da instalação.”</p>
+              <div class="testimonial-author">
+                <span class="avatar">MO</span>
+                <div><strong>Marcos Oliveira</strong><small>Projeto residencial demonstrativo</small></div>
+              </div>
+            </article>
+
+            <article class="testimonial-card" data-aos="fade-left" data-aos-delay="120">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p>“A proposta ficou simples de entender e conseguimos visualizar melhor a estimativa de economia antes de decidir.”</p>
+              <div class="testimonial-author">
+                <span class="avatar">PS</span>
+                <div><strong>Patrícia Souza</strong><small>Projeto comercial demonstrativo</small></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band-content" data-aos="fade-up">
+        <div>
+          <span class="section-kicker light">COMECE PELO ESTUDO GRATUITO</span>
+          <h2>Veja se energia solar faz sentido para o seu perfil de consumo.</h2>
+        </div>
+        <a href="#hero-form" class="btn btn-light">Simular agora <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro" data-aos="fade-right">
+          <span class="section-kicker">PERGUNTAS FREQUENTES</span>
+          <h2>Dúvidas antes de pedir um orçamento?</h2>
+          <p>Confira respostas rápidas para algumas das perguntas mais comuns.</p>
+          <div class="faq-contact-box">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div><strong>Prefere falar com alguém?</strong><span>Atendimento pelo WhatsApp</span></div>
+          </div>
+        </div>
+
+        <div class="accordion" data-aos="fade-left">
+          <article class="faq-item open">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>Quanto posso economizar com energia solar?</span><i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer"><p>A economia depende do consumo, localização, área disponível, orientação do telhado e características do sistema. O estudo inicial serve justamente para estimar esses números.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>O sistema funciona em dias nublados?</span><i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer"><p>Sim. A geração tende a ser menor com baixa irradiação, mas os painéis continuam produzindo energia mesmo com o céu nublado.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Preciso fazer manutenção frequente?</span><i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer"><p>Os sistemas normalmente exigem pouca manutenção, mas inspeções periódicas e limpeza quando necessária ajudam a preservar o desempenho.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Vocês atendem empresas e residências?</span><i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer"><p>Sim. O dimensionamento pode ser feito para diferentes perfis de consumo, desde residências até estabelecimentos comerciais.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="#topo">
+          <span class="logo-icon"><i class="fa-solid fa-solar-panel"></i></span>
+          <span class="logo-text">Lumen <strong>Solar</strong></span>
+        </a>
+        <p>Energia limpa, economia real e atendimento consultivo do começo ao fim.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Navegação</h3>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#depoimentos">Resultados</a>
+        <a href="#faq">Dúvidas</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <a href="tel:+551140000000"><i class="fa-solid fa-phone"></i> (11) 4000-0000</a>
+        <a href="mailto:contato@lumensolar.com.br"><i class="fa-solid fa-envelope"></i> contato@lumensolar.com.br</a>
+        <span><i class="fa-solid fa-location-dot"></i> São Paulo - SP</span>
+      </div>
+
+      <div class="footer-column">
+        <h3>Redes sociais</h3>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear"></span> Lumen Solar. Projeto demonstrativo para portfólio.</p>
+      <p>Desenvolvido por <strong>OrbiTech</strong></p>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/551140000000" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Fale conosco</span>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
